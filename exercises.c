@@ -37,7 +37,14 @@ void arrayMaxMin(int *a, int n, int *max, int *min)
         {
           (*min)=a[i];
         }
-        }
+      }
+  for(int j = 0; j < n; j++)
+    {
+      if(a[j]>a[j+1])
+      {
+        (*max)=a[j];
+      }
+    }
 }
 
 
