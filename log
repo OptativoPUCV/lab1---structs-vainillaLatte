@@ -961,3 +961,20 @@ exercises.c:72:23: error: expected identifier before ‘&’ token
       |                       ^
 Compilation failed
 071c6aa
+Wed 15 Mar 2023 11:52:49 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:72:15: error: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[30]’ [-Werror=format=]
+   72 |     scanf("%30c", &p->nombre);
+      |            ~~~^   ~~~~~~~~~~
+      |               |   |
+      |               |   char (*)[30]
+      |               char *
+exercises.c:72:5: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   72 |     scanf("%30c", &p->nombre);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bb6d5e6
