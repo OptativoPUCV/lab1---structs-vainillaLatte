@@ -323,3 +323,19 @@ exercises.c:73:25: error: expected expression before ‘Persona’
       |                         ^~~~~~~
 Compilation failed
 94f3187
+Wed 15 Mar 2023 11:38:53 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:31: error: expected expression before ‘Persona’
+   71 |     p->nombre=scanf("%c[30]", Persona.nombre);
+      |                               ^~~~~~~
+exercises.c:72:28: error: expected expression before ‘Persona’
+   72 |     p->rut=scanf("%c[11]",&Persona.rut);
+      |                            ^~~~~~~
+exercises.c:73:25: error: expected expression before ‘Persona’
+   73 |     p->edad=scanf("%i",&Persona.edad);
+      |                         ^~~~~~~
+Compilation failed
+5a0cdf4
