@@ -384,3 +384,30 @@ exercises.c:71:5: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 33bad28
+Wed 15 Mar 2023 11:40:36 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:15: error: passing argument 1 of ‘scanf’ makes pointer from integer without a cast [-Werror=int-conversion]
+   71 |     scanf("%c"[30], &p->nombre);
+      |           ~~~~^~~~
+      |               |
+      |               char
+In file included from test.c:1:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdio.h:397:42: note: expected ‘const char * restrict’ but argument is of type ‘char’
+  397 | extern int scanf (const char *__restrict __format, ...) __wur;
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+In file included from test.c:5:
+exercises.c:72:28: error: expected expression before ‘Persona’
+   72 |     p->rut=scanf("%c[11]",&Persona.rut);
+      |                            ^~~~~~~
+exercises.c:73:25: error: expected expression before ‘Persona’
+   73 |     p->edad=scanf("%i",&Persona.edad);
+      |                         ^~~~~~~
+exercises.c:71:5: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   71 |     scanf("%c"[30], &p->nombre);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5f18e81
