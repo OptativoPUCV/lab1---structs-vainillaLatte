@@ -951,3 +951,13 @@ exercises.c:72:5: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 307d638
+Wed 15 Mar 2023 11:52:39 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:72:23: error: expected identifier before ‘&’ token
+   72 |     scanf("%30c", &p->&nombre);
+      |                       ^
+Compilation failed
+071c6aa
