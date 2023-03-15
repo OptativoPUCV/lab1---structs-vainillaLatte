@@ -31,15 +31,15 @@ almacena en las variables apuntadas por max y min.
 */
 void arrayMaxMin(int *a, int n, int *max, int *min) 
 {
-
+    *min=a[0]
     for(int i = 0; i < n; i++)
       {
-        if(a[0] > a[i])
+        if(*min > a[i])
         {
           (*min)=a[i];
         }
       }
-  for(int j = 0; j < n; j++)
+   for(int j = 0; j < n; j++)
     {
       if(a[0] < a[j])
       {
@@ -67,9 +67,7 @@ typedef struct {
 Persona* crearPersona(char nombre[], char rut[], int edad) {
    Persona * p = (Persona *) malloc(sizeof(Persona));
    //asignar valores de entrada a los campos de p
-    scanf("%s[30]", &p->nombre);
-    scanf("%s[11]",&p->rut);
-    scanf("%i",&p->edad);
+    
 
    return p;
 }

@@ -254,3 +254,16 @@ exercises.c:72:5: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 9cebb35
+Wed 15 Mar 2023 11:35:02 PM UTC: 
+ exercises.c | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:34:14: error: expected ‘;’ before ‘for’
+   34 |     *min=a[0]
+      |              ^
+      |              ;
+   35 |     for(int i = 0; i < n; i++)
+      |     ~~~       
+Compilation failed
+22729b3
