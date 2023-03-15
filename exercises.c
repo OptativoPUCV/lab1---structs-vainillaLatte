@@ -70,8 +70,8 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
    //asignar valores de entrada a los campos de p
   
     scanf("%30c", &p->nombre);
-    p->rut=scanf("%c[11]",&Persona.rut);
-    p->edad=scanf("%i",&Persona.edad);
+    //p->rut=scanf("%c[11]",&Persona.rut);
+    //p->edad=scanf("%i",&Persona.edad);
 
    return p;
 }
