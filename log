@@ -279,3 +279,31 @@ Wed 15 Mar 2023 11:35:39 PM UTC:
  tests:  2|5
 total_score: 20/70
 2548b40
+Wed 15 Mar 2023 11:37:55 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:71:6: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   71 |     p.nombre=scanf("%c[30]", &Persona.nombre);
+      |      ^
+      |      ->
+exercises.c:71:31: error: expected expression before ‘Persona’
+   71 |     p.nombre=scanf("%c[30]", &Persona.nombre);
+      |                               ^~~~~~~
+exercises.c:72:6: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   72 |     p.rut=scanf("%c[11]",&Persona.rut);
+      |      ^
+      |      ->
+exercises.c:72:27: error: expected expression before ‘Persona’
+   72 |     p.rut=scanf("%c[11]",&Persona.rut);
+      |                           ^~~~~~~
+exercises.c:73:6: error: ‘p’ is a pointer; did you mean to use ‘->’?
+   73 |     p.edad=scanf("%i",&Persona.edad);
+      |      ^
+      |      ->
+exercises.c:73:24: error: expected expression before ‘Persona’
+   73 |     p.edad=scanf("%i",&Persona.edad);
+      |                        ^~~~~~~
+Compilation failed
+3f11f26
