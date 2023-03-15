@@ -59,8 +59,8 @@ los datos ingresados como parámetros y retorna un puntero
 al dato recién creado.
 */
 typedef struct {
-  char *nombre[30];
-  char *rut[11];
+  char* nombre[30];
+  char* rut[11];
   int edad;
 } Persona;
 
@@ -68,7 +68,7 @@ typedef struct {
 Persona* crearPersona(char nombre[], char rut[], int edad) {
    Persona * p = (Persona *) malloc(sizeof(Persona));
    //asignar valores de entrada a los campos de p
-    scanf("%30c", &p->nombre);
+    scanf("%30s", &p->nombre);
     p->rut=scanf("%c[11]",&Persona.rut);
     p->edad=scanf("%i",&Persona.edad);
 
