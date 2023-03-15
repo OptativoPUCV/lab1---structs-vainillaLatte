@@ -888,3 +888,9 @@ test.c:121:33: error: format ‘%s’ expects argument of type ‘char *’, but
 cc1: all warnings being treated as errors
 Compilation failed
 fa6a441
+Wed 15 Mar 2023 11:47:09 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  2|5
+total_score: 20/70
+786bc81

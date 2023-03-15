@@ -59,8 +59,8 @@ los datos ingresados como parámetros y retorna un puntero
 al dato recién creado.
 */
 typedef struct {
-  char* nombre[30];
-  char* rut[11];
+  char nombre[30];
+  char rut[11];
   int edad;
 } Persona;
 
