@@ -32,6 +32,7 @@ almacena en las variables apuntadas por max y min.
 void arrayMaxMin(int *a, int n, int *max, int *min) 
 {
     *min=a[0];
+    *max = a[0];
     for(int i = 0; i < n; i++)
       {
         if(*min > a[i])
@@ -41,7 +42,7 @@ void arrayMaxMin(int *a, int n, int *max, int *min)
       }
    for(int j = 0; j < n; j++)
     {
-      if(a[0] < a[j])
+      if(*max < a[j])
       {
         (*max)=a[j];
       }
