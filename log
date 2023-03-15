@@ -171,3 +171,32 @@ exercises.c:72:18: error: ‘p’ is a pointer; did you mean to use ‘->’?
       |                  ->
 Compilation failed
 ee2c4aa
+Wed 15 Mar 2023 11:31:33 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:70:13: error: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[30]’ [-Werror=format=]
+   70 |     scanf("%c", &p->nombre);
+      |            ~^   ~~~~~~~~~~
+      |             |   |
+      |             |   char (*)[30]
+      |             char *
+exercises.c:71:13: error: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[11]’ [-Werror=format=]
+   71 |     scanf("%c",&p->rut);
+      |            ~^  ~~~~~~~
+      |             |  |
+      |             |  char (*)[11]
+      |             char *
+exercises.c:70:5: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   70 |     scanf("%c", &p->nombre);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:71:5: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   71 |     scanf("%c",&p->rut);
+      |     ^~~~~~~~~~~~~~~~~~~
+exercises.c:72:5: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   72 |     scanf("%i",&p->edad);
+      |     ^~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+13a3fc0
