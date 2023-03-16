@@ -96,7 +96,7 @@ Vector * crearVector(int n) {
   Vector *ptrvector[n];
   for(int i = 0; i < n; i++)
     {
-      Vector * *ptrvector = (Vector *) malloc(sizeof(Vector));
+      Vector * *ptrvector = (Vector **) malloc(sizeof(Vector));
       *ptrvector[i]->datos=0;
     }
   return *ptrvector;
