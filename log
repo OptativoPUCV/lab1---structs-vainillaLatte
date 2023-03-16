@@ -1342,3 +1342,13 @@ exercises.c:100:7: error: ignoring return value of ‘scanf’ declared with att
 cc1: all warnings being treated as errors
 Compilation failed
 1fd5af5
+Thu 16 Mar 2023 03:43:58 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:100:29: error: invalid type argument of ‘->’ (have ‘Vector’)
+  100 |       scanf("%d", &vector[i]->datos);
+      |                             ^~
+Compilation failed
+c084605
