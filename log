@@ -1680,3 +1680,18 @@ Thu 16 Mar 2023 10:31:39 PM UTC:
  tests:  4|3
 total_score: 40/70
 65f2178
+Thu 16 Mar 2023 10:32:14 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:118:16: error: ‘Vector’ has no member named ‘dato’; did you mean ‘datos’?
+  118 |    return v[i].dato;
+      |                ^~~~
+      |                datos
+exercises.c:119:1: error: control reaches end of non-void function [-Werror=return-type]
+  119 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d765e2c
