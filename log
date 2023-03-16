@@ -1647,3 +1647,9 @@ exercises.c:97:12: error: assignment to ‘int *’ from incompatible pointer ty
 cc1: all warnings being treated as errors
 Compilation failed
 e49ef29
+Thu 16 Mar 2023 04:30:50 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|3
+total_score: 40/70
+ac049d3
