@@ -1761,3 +1761,14 @@ Thu 16 Mar 2023 10:48:06 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 2ae2c33
+Thu 16 Mar 2023 10:48:24 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:117:7: error: unused variable ‘valor’ [-Werror=unused-variable]
+  117 |   int valor= *v[i].datos;
+      |       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b361660
