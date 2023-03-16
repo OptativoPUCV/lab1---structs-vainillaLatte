@@ -1801,3 +1801,64 @@ Thu 16 Mar 2023 10:53:46 PM UTC:
  tests:  7|1
 total_score: 60/70
 4d4f1a6
+Thu 16 Mar 2023 11:01:16 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:139:12: error: invalid initializer
+  139 |   Vector a=crearVector(2);
+      |            ^~~~~~~~~~~
+exercises.c:140:12: error: invalid initializer
+  140 |   Vector b=crearVector(2);
+      |            ^~~~~~~~~~~
+exercises.c:141:16: error: incompatible type for argument 1 of ‘asignarValor’
+  141 |   asignarValor(a,0,a1);
+      |                ^
+      |                |
+      |                Vector
+exercises.c:107:28: note: expected ‘Vector *’ but argument is of type ‘Vector’
+  107 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+exercises.c:142:16: error: incompatible type for argument 1 of ‘asignarValor’
+  142 |   asignarValor(a,1,a2);
+      |                ^
+      |                |
+      |                Vector
+exercises.c:107:28: note: expected ‘Vector *’ but argument is of type ‘Vector’
+  107 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+exercises.c:143:16: error: incompatible type for argument 1 of ‘asignarValor’
+  143 |   asignarValor(b,0,b1);
+      |                ^
+      |                |
+      |                Vector
+exercises.c:107:28: note: expected ‘Vector *’ but argument is of type ‘Vector’
+  107 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+exercises.c:144:16: error: incompatible type for argument 1 of ‘asignarValor’
+  144 |   asignarValor(b,1,b2);
+      |                ^
+      |                |
+      |                Vector
+exercises.c:107:28: note: expected ‘Vector *’ but argument is of type ‘Vector’
+  107 | void asignarValor(Vector * v, int i, int valor) {
+      |                   ~~~~~~~~~^
+exercises.c:145:9: error: incompatible type for argument 1 of ‘sumaV’
+  145 |   sumaV(a,b,c);
+      |         ^
+      |         |
+      |         Vector
+exercises.c:125:21: note: expected ‘Vector *’ but argument is of type ‘Vector’
+  125 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |            ~~~~~~~~~^
+exercises.c:145:11: error: incompatible type for argument 2 of ‘sumaV’
+  145 |   sumaV(a,b,c);
+      |           ^
+      |           |
+      |           Vector
+exercises.c:125:33: note: expected ‘Vector *’ but argument is of type ‘Vector’
+  125 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |                        ~~~~~~~~~^
+Compilation failed
+0714761
