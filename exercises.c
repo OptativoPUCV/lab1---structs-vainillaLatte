@@ -96,8 +96,8 @@ Vector * crearVector(int n) {
   Vector vector[n];
   for(int i = 0; i < n; i++)
     {
-      Vector * vector = (Vector *) malloc(sizeof(Vector));
-      vector[i].datos=0;
+      Vector * vector = (Vector *) malloc(sizeof(Vector)*n);
+      vector.datos=(Vector *)calloc(n,sizeof(vector));
     }
  
   return vector;
