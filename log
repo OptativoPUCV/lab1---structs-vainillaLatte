@@ -1636,3 +1636,14 @@ exercises.c:97:12: error: assignment to ‘int *’ from incompatible pointer ty
 cc1: all warnings being treated as errors
 Compilation failed
 62b7cb1
+Thu 16 Mar 2023 04:30:13 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:97:12: error: assignment to ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   97 |   v->datos = (Vector *)calloc(n, sizeof(int));
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+e49ef29
