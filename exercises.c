@@ -97,7 +97,7 @@ Vector * crearVector(int n) {
   for(int i = 0; i < n; i++)
     {
       Vector * vector = (Vector *) malloc(sizeof(Vector));
-      scanf("%i", &vector[i].datos);
+      vector[i].datos=0;
     }
   return vector;
 }
