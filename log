@@ -1046,3 +1046,17 @@ exercises.c:72:5: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 b65e3d3
+Thu 16 Mar 2023 12:51:47 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:72:11: error: too many arguments for format [-Werror=format-extra-args]
+   72 |     scanf("%*c", &p->nombre);
+      |           ^~~~~
+exercises.c:72:5: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   72 |     scanf("%*c", &p->nombre);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+95365c3
