@@ -99,7 +99,7 @@ Vector * crearVector(int n) {
       Vector * vector = (Vector *) malloc(sizeof(Vector));
       vector[i].datos=0;
     }
-  return *vector;
+  return vector*;
 }
 
 /*
