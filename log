@@ -1745,3 +1745,14 @@ exercises.c:108:13: error: assignment to ‘int *’ from ‘int’ makes pointe
 cc1: all warnings being treated as errors
 Compilation failed
 50b5ebc
+Thu 16 Mar 2023 10:47:57 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:108:4: error: ‘v’ is a pointer; did you mean to use ‘->’?
+  108 |   v.datos[i]=valor;
+      |    ^
+      |    ->
+Compilation failed
+70359b9
