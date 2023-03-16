@@ -1369,3 +1369,20 @@ exercises.c:100:7: error: ignoring return value of ‘scanf’ declared with att
 cc1: all warnings being treated as errors
 Compilation failed
 cd7adac
+Thu 16 Mar 2023 03:44:18 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:100:15: error: format ‘%i’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Werror=format=]
+  100 |       scanf("%i", &vector[i].datos);
+      |              ~^   ~~~~~~~~~~~~~~~~
+      |               |   |
+      |               |   int **
+      |               int *
+exercises.c:100:7: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+  100 |       scanf("%i", &vector[i].datos);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+30b792a
