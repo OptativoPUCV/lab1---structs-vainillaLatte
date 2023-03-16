@@ -1784,3 +1784,14 @@ Thu 16 Mar 2023 10:48:55 PM UTC:
  tests:  6|2
 total_score: 50/70
 6183230
+Thu 16 Mar 2023 10:53:37 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:126:23: error: ‘a’ is a pointer; did you mean to use ‘->’?
+  126 |   for(int i = 0; i < a.capacidad;i++)
+      |                       ^
+      |                       ->
+Compilation failed
+50cf2f8
