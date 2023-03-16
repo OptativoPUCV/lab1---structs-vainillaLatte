@@ -1706,3 +1706,14 @@ exercises.c:118:15: error: returning ‘int *’ from a function with return typ
 cc1: all warnings being treated as errors
 Compilation failed
 223deac
+Thu 16 Mar 2023 10:32:44 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘obtenerValor’:
+exercises.c:117:13: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+  117 |   int valor=v[i].datos;
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+75cb154
