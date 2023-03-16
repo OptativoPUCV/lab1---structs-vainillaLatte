@@ -114,7 +114,7 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
-  int valor=v[i].datos;
+  int valor= *v[i].datos;
    return valor;
 }
 

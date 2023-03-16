@@ -1717,3 +1717,9 @@ exercises.c:117:13: error: initialization of ‘int’ from ‘int *’ makes in
 cc1: all warnings being treated as errors
 Compilation failed
 75cb154
+Thu 16 Mar 2023 10:32:59 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|3
+total_score: 40/70
+f892cd0
