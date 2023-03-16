@@ -1029,3 +1029,20 @@ exercises.c:72:5: error: ignoring return value of ‘scanf’ declared with attr
 cc1: all warnings being treated as errors
 Compilation failed
 2a0d04d
+Thu 16 Mar 2023 12:51:35 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:72:15: error: format ‘%[^
+   ’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[30]’ [-Werror=format=]
+   72 |     scanf("%[^\n]*c", &p->nombre);
+      |            ~~~^~      ~~~~~~~~~~
+      |               |       |
+      |               char *  char (*)[30]
+exercises.c:72:5: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   72 |     scanf("%[^\n]*c", &p->nombre);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b65e3d3

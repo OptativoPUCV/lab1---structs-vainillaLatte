@@ -69,8 +69,8 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
    Persona * p = (Persona *) malloc(sizeof(Persona));
    //asignar valores de entrada a los campos de p
   
-    scanf("%30*c", &p->nombre);
-  getchar();
+    scanf("%[^\n]*c", &p->nombre);
+  
     
 
    return p;
