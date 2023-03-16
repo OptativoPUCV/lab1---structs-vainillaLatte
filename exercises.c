@@ -92,7 +92,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  int dato;
+  
   Vector *vector=NULL;
   for(int i = 0; i < n; i++)
     {
