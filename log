@@ -1617,3 +1617,22 @@ Thu 16 Mar 2023 04:11:44 PM UTC:
  tests:  3|4
 total_score: 30/70
 26cb1e5
+Thu 16 Mar 2023 04:30:03 PM UTC: 
+ exercises.c | 13 ++++---------
+ 1 file changed, 4 insertions(+), 9 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:97:24: error: too many arguments to function ‘calloc’
+   97 |   v->datos = (Vector *)calloc(n, sizeof(int),n);
+      |                        ^~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:542:14: note: declared here
+  542 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+In file included from test.c:5:
+exercises.c:97:12: error: assignment to ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   97 |   v->datos = (Vector *)calloc(n, sizeof(int),n);
+      |            ^
+cc1: all warnings being treated as errors
+Compilation failed
+62b7cb1
