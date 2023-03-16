@@ -1567,3 +1567,17 @@ exercises.c:103:10: error: function returns address of local variable [-Werror=r
 cc1: all warnings being treated as errors
 Compilation failed
 af44bdf
+Thu 16 Mar 2023 04:02:26 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:100:16: error: invalid type argument of ‘->’ (have ‘Vector’)
+  100 |       vector[i]->datos=(Vector *)calloc(n,sizeof(vector));
+      |                ^~
+exercises.c:103:10: error: function returns address of local variable [-Werror=return-local-addr]
+  103 |   return vector;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2a12f17
