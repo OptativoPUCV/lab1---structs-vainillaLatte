@@ -93,15 +93,15 @@ typedef struct {
 
 Vector * crearVector(int n) {
   
-  Vector vector[n];
+  /*Vector vector[n];
   for(int i = 0; i < n; i++)
     {
       Vector * vector = (Vector *) malloc(sizeof(Vector)*n);
       vector[i].datos=(Vector *)calloc(n,sizeof(vector));
     }
  
-  return vector;
-  //return NULL;
+  return vector;*/
+  return NULL;
 }
 
 /*
